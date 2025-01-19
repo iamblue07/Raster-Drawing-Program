@@ -1,0 +1,182 @@
+body {
+    margin: 0px;
+    background: linear-gradient(45deg, #7BD5F5, #1CA7EC);
+    overflow-y: hidden;
+}
+
+.div_meniu_instrumente {
+    height: 8vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #7BD5F5, #1CA7EC);
+    padding: 10px;
+    border: 2px solid #1f2f98;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.div_meniu_functionalitati {
+    width: 15vw;
+    max-width: 15vw;
+    height:100%;
+    max-height:100%;
+    background: linear-gradient(45deg, #7BD5F5, #1CA7EC);
+    padding: 10px;
+    border: 2px solid #1f2f98;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items:center;
+}
+
+.canvas_instrumente {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 92vh;
+    border: 10px;
+    box-sizing: border-box;
+}
+
+.div_metode_salvare {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.lista_butoane {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+    width: 80%;
+}
+
+.buton {
+    padding: 8px 16px;
+    background: linear-gradient(180deg, #02aab0, #00cdac);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buton:hover {
+    background: linear-gradient(180deg, #00cdac, #02aab0);
+}
+
+#cnv {
+    width: 85vw;
+    height:100%;
+    border: 3px solid #4CAF50;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.label {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #2566af; 
+    background-image: linear-gradient(45deg, #2566af 15%, #234c80 66%, #1d3454 91%, #151d2c 59%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    margin-bottom: 5px;
+}
+
+.div_selector_culori, .figura_grosime_culoare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colors-menu {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.color-option {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.div_selector_grosime {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#slider_grosime {
+    width: 100%;
+    max-width: 200px;
+}
+
+.listbox_figuri {
+    width: 90%;
+    background-color: #fff;
+    margin-top:5px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.lista_figuri {
+    margin-top: 5px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.div_modifica_figuri {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div_umple_culoare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.figura_dimensiuni, .figura_coord_ox, .figura_coord_oy, .figura_grosime_culoare {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.buton_functionalitati {
+    width: 25px;
+    height: 25px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.buton_functionalitati:hover {
+    background-color: #555;
+}
+
+.div_figura {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}

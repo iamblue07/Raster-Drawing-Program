@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect Paint</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class = "div_meniu_instrumente">
+        <div class = "lista_butoane">
+            <button class="buton" id = "linie"> <span class="buton_text">Linie</span></button>
+            <button class="buton" id = "dreptunghi"> <span class="buton_text">Dreptunghi</span></button>
+            <button class="buton" id = "cerc"> <span class="buton_text">Cerc</span></button>
+            <button class="buton" id = "triunghi"><span class = "buton_text">Triunghi</span></button>
+            <button class="buton" id = "elipsa"> <span class="buton_text">Elipsa</span></button>
+            <button class="buton" id = "hexagon"> <span class="buton_text">Hexagon</span></button>
+        </div>
+    </div>
+    <div class = "canvas_instrumente">
+        <canvas id = "cnv"></canvas>
+        <div class = "div_meniu_functionalitati">
+            <div class = "div_metode_salvare">
+                <button class="buton" id = "salvare_raster">Salvare raster</button>
+                <button class="buton" id = "salvare_vectorial">Salvare vectorial</button>
+            </div>
+            <div class = "div_umple_culoare">
+                <p class = "label"> Coloreaza interiorul figurii</p>
+                <input type = "checkbox" id = "cbUmpleCuloare">
+                <input type = "color" id = "culoareInterior">
+            </div>
+            <div class = "div_selector_culori">
+                <p class = "label">Culoare creion</p>
+                <input type="color" id="culoareLinie" value="#ff0000">
+            </div>
+            <div class = "div_selector_grosime">
+                <p class = "label">Grosimea liniei:</p>
+                <input type = "range" min = "1" max = "10" value = "5" id = "slider_grosime">
+                <canvas id="cnvExemplificareGrosime" width="200" height="20"></canvas>
+            </div>  
+            <div class = "div_selector_culori">   
+                <p class = "label">Culoare fundal</p>
+                <input type="color" id="culoareFundal" value="#FFFFFF">
+            </div>
+            <div class = "listbox_figuri">
+                <p class = "label">Figuri prezente in canvas</p>
+                <div class = "lista_figuri"> </div>
+            </div>
+            <div class = "div_modifica_figuri">
+                <p class = "label">Modifica proprietatile figurii selectate:</p>
+                <div class = "figura_dimensiuni">
+                    <p class = "label">Modifica dimensiuni</p>
+                    <button class="buton_functionalitati" id="figura_dimensiuni_scade">-</button>
+                    <button class="buton_functionalitati" id="figura_dimensiuni_creste">+</button>
+                </div>
+                <div class = figura_coord_ox>
+                    <p class = "label">Modifica pozitia OX</p>
+                    <button class="buton_functionalitati" id="figura_ox_scade">-</button>
+                    <button class="buton_functionalitati" id="figura_ox_creste">+</button>
+                </div>
+                <div class = figura_coord_oy>
+                    <p class = "label">Modifica pozitia OY</p>
+                    <button class="buton_functionalitati" id="figura_oy_scade">-</button>
+                    <button class="buton_functionalitati" id="figura_oy_creste">+</button>
+                </div>
+                <div class = figura_grosime_culoare>
+                    <p class = "label">Modifica grosimea bordurii</p>
+                    <input type = "range" min = "1" max = "10" value = "5" id = "modificare_figura_grosime">
+                    <p class = "label">Modifica culoarea bordurii</p>
+                    <input type="color" id="modificare_figura_culoare" value="#ff0000">
+                    <p class = "label">Modifica culoarea din interior</p>
+                    <input type="color" id="modificare_figura_culoare_interior" value = "#ff0000">
+                    <button class = "buton" id="figura_sterge">Sterge Figura</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
